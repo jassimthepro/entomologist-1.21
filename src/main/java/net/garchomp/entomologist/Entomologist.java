@@ -2,6 +2,7 @@ package net.garchomp.entomologist;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.garchomp.entomologist.item.ModItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -11,6 +12,6 @@ public class Entomologist implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-
+		ModItems.registerModItems();
 	}
 }
