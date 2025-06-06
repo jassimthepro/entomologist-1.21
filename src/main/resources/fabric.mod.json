@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "entomologist",
+	"version": "${version}",
+	"name": "Entomologist",
+	"description": "A goofy mod about bugs!",
+	"authors": [
+		"AnotherGarchomp!"
+	],
+	"contact": {
+		"homepage": "https://modrinth.com/user/anothergarchomp",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/entomologist/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.garchomp.entomologist.Entomologist"
+		],
+		"fabric-datagen": [
+			"net.garchomp.entomologist.EntomologistDataGenerator"
+		],
+		"client": [
+			"net.garchomp.entomologist.EntomologistClient"
+		]
+	},
+	"mixins": [
+		"entomologist.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.14",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
